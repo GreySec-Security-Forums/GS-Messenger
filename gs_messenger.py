@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import requests
 import sys
 import cmd
@@ -9,11 +8,18 @@ from pprint import pprint
 from time import sleep
 from threading import Thread
 
-RESET = '\x1b[39m'
-RED = '\x1b[31m'
-GREEN = '\x1b[92m'
-BLUE = '\x1b[34m'
-YELLOW = '\x1b[33m'
+if sys.platform == "win32":
+    RESET = ''
+    RED = ''
+    GREEN = ''
+    BLUE = ''
+    YELLOW = ''
+else:
+    RESET = '\x1b[39m'
+    RED = '\x1b[31m'
+    GREEN = '\x1b[92m'
+    BLUE = '\x1b[34m'
+    YELLOW = '\x1b[33m'
 
 def welcome():
     banner_lines = [
@@ -300,7 +306,7 @@ class CommandInterpreter(cmd.Cmd):
     def do_quit(self, arg):
         "Exit the program"
         print("Bye friend!")
-        return
+        bye()
 
 ## Main ####
 
