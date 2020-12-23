@@ -16,3 +16,7 @@ GreySec PM Messenger Program
 * read - Read a PM. Example: read 3
 * reply - Reply to a PM. Example: reply 3
 * compose - Write a new PM to another user
+
+## Notes
+* There's a quit command, but it doesn't really work yet...
+* PMs are automatically retrieved when you log in and every 3 minutes after that. So really you only need to use 'retrieve' if you're impatient about checking your PMs.
