@@ -4,7 +4,10 @@ GreySec PM Messenger Program
 ![a picture](https://i.imgur.com/h79xCLT.png "GS Messenger")
 
 ## Usage
+### Unix
 `$ python3 gs_messenger.py`
+### Windows
+`C:\Users\user1\Desktop\gs_messenger.exe`
 
 ## Commands
 * login - Log in to GreySec.net
