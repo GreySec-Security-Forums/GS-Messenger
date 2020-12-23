@@ -7,7 +7,7 @@ GreySec PM Messenger Program
 ### Unix
 `$ python3 gs_messenger.py`
 ### Windows
-`C:\Users\user1\Desktop\gs_messenger.exe`
+`.\path\to\gs_messenger.exe`
 
 ## Commands
 * login - Log in to GreySec.net
